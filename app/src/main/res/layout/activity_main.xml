@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#ECEFF1">
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Completed: 0"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:padding="8dp"
+        android:background="#80FFFFFF"
+        android:elevation="4dp"
+        android:shadowColor="#40000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        android:layout_marginBottom="16dp"/>
+
+    <FrameLayout
+        android:id="@+id/gameContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:background="#EEEEEE"
+        android:elevation="6dp"
+        android:padding="4dp"
+        android:backgroundTint="#F5F5F5">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:drawable/dialog_holo_light_frame"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp">
+
+        <Button
+            android:id="@+id/buttonLeft"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="←"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:background="@android:drawable/btn_default"
+            android:backgroundTint="#4CAF50"
+            android:elevation="4dp"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/buttonRight"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="→"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:background="@android:drawable/btn_default"
+            android:backgroundTint="#4CAF50"
+            android:elevation="4dp"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/buttonDown"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="↓"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:background="@android:drawable/btn_default"
+            android:backgroundTint="#D81B60"
+            android:elevation="4dp"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/buttonRotate"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="↻"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:background="@android:drawable/btn_default"
+            android:backgroundTint="#FF5722"
+            android:elevation="4dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonAddTask"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="ADD TASK"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:background="@android:drawable/btn_default"
+        android:backgroundTint="#7B1FA2"
+        android:elevation="6dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"/>
+</LinearLayout>
